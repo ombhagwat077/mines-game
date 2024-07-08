@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mines Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-container">
+            <nav class="nav-bar">
+                <ul>
+                    <li><a href="#" class="nav-link" title="Profile"><i class="fas fa-user"></i></a></li>
+                </ul>
+            </nav>
+            <h1 class="game-name">Mines Game</h1>
+            <nav class="nav-bar">
+                <ul>
+                    <li><a href="#" class="nav-link" title="Login/Signup">Login/Signup</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="main-container">
+        <aside class="sidebar">
+            <div class="nav-toggler">
+                <span></span>
+            </div>
+            
+               
+    
+
+            <ul class="nav">
+                <li><a href="#home" class="sidebar-link"><i class="fa fa-home"></i>Home</a></li>
+                <li><a href="#recent-plays" class="sidebar-link"><i class="fa fa-list"></i>Recent Plays</a></li>
+                <li><a href="#about" class="sidebar-link"><i class="fa fa-user"></i>About</a></li>
+                <li><a href="#contact" class="sidebar-link"><i class="fa fa-comments"></i>Contact</a></li>
+                <li><a href="#help" class="sidebar-link"><i class="fa fa-tools"></i>Help</a></li>
+            </ul>
+        
+    </aside>
+        
+        <div class="game2-container">
+            <div class="settings-container">
+                <div class="settings">
+                    <label for="mine-count">Number of Mines: </label>
+                    <select id="mine-count">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                    </select>
+                    <button class="start" id="start-game">Start Game</button>
+                    <button class="cashout" id="cashout">Reveal</button>
+                </div>
+            </div>
+            <div class="game-container">
+                <div class="grid" id="game-grid"></div>
+            </div>
+        </div>
+
+    </div>
+    <footer class="footer">
+        <div class="socialmedia">
+          <a> <i class="fa-brands fa-facebook"></i> </a>
+          <a> <i class="fa-brands fa-instagram"></i> </a>
+          <a> <i class="fa-brands fa-twitter"></i> </a>
+          <a> <i class="fa-brands fa-youtube"></i> </a>
+          <a> <i class="fa-brands fa-linkedin"></i> </a>
+    
+        </div>
+    
+    </footer>
+    <audio id="boom-sound" src="mine.wav"></audio>
+    <audio id="gem-sound" src="gem.wav"></audio>
+    <audio id="reveal-sound" src="reveal.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+
+</html>
